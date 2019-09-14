@@ -4,13 +4,21 @@ using UnityEngine;
 
 public class HelloWorld : MonoBehaviour
 {
-    int guess = 500;
-    int max = 1000;
-    int min = 1;
+    int guess;
+    int max;
+    int min;
 
     // Start is called before the first frame update
     void Start()
     {
+        StartGame();
+    }
+
+    void StartGame()
+    {
+        max = 1000;
+        min = 1;
+        guess = 500;
         Debug.Log("Welcome to number wizard lol");
         Debug.Log("Highest number:" + max);
         Debug.Log("Lowest number:" + min);
@@ -26,21 +34,26 @@ public class HelloWorld : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.UpArrow))
         {
             min = guess;
-            guess = (max + min) / 2;
-            Debug.Log("Is it higher or lower than..." + guess);
+            NextGuess();
         }
         else if (Input.GetKeyDown(KeyCode.DownArrow))
         {
             Debug.Log("Down key was pressed.");
             max = guess;
-            guess = (max + min) / 2;
-            Debug.Log(guess);
+            NextGuess();
         }
         else if (Input.GetKeyDown(KeyCode.Return))
         {
             Debug.Log("You hit enter.");
+            StartGame();
 
         }
 
+    }
+
+    void NextGuess()
+    {
+        guess = (max + min) / 2;
+        Debug.Log("Is it higher or lower than..." + guess);
     }
 }
