@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56f864e0f94ea4538b17de999bbc0f44, type: 3}
+  m_Name: X1. Game Over
+  m_EditorClassIdentifier: 
+  storyText: 'Game Over LOL
+
+
+'
+  nextStates:
+  - {fileID: 11400000, guid: 7ee37fe88a7ce4d06890d101a65fc64c, type: 2}
+  - {fileID: 11400000, guid: 29d33a43b3e184726bcd6d02520bde05, type: 2}
