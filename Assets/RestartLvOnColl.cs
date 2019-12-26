@@ -13,4 +13,6 @@ public class RestartLvOnColl : MonoBehaviour
         if(collision.collider.tag == strTag)
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
+
+    
 }
