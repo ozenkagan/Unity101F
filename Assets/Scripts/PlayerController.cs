@@ -71,6 +71,7 @@ public class PlayerController : MonoBehaviour
     private void OnCollisionStay(Collision collision)
     {
         jumpDirection = Vector3.zero;
+        currentJump = 0;
         
         
         foreach(ContactPoint c in collision.contacts)
