@@ -8,6 +8,7 @@ public class States : ScriptableObject
 {
     [TextArea(14,10)] [SerializeField] string storyText;
     [SerializeField] States[] nextStates;
+    [SerializeField] StatesNumber[] numberStates;
 
     public string GetStateStory()
     {
