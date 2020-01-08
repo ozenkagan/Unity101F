@@ -10,6 +10,8 @@ public class AddPlayerVelocity : MonoBehaviour
     KeyCode keyPositive;
     [SerializeField]
     KeyCode keyNegative;
+    [SerializeField]
+    KeyCode newKey;
 
     // Start is called before the first frame update
     void Start()
