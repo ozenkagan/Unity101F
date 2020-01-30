@@ -43,6 +43,9 @@ public class PlayerController : MonoBehaviour
     void Move()
     {
         rb.AddForce(moveDirection * speed);
+            currentJump++;
+            Debug.Log(currentJump);
+            Debug.Log(isGrounded);
     }
 
     
